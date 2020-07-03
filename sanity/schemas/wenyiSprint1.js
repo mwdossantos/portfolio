@@ -1,0 +1,26 @@
+export default {
+    name: "wenyiSprint1",
+    title: "Portfolio item",
+    type: "document",
+    fieldsets: [{ name: "sprintInfo", title: "Sprint details" }],
+    fields: [
+        {
+            name: "name",
+            title: "Name",
+            type: "string",
+            fieldset: "sprintInfo",
+        },
+
+        {
+            name: "content",
+            title: "Content",
+            type: "array",
+            of: [
+                { type: "block" },
+                {
+                    type: "image",
+                },
+            ],
+        },
+    ],
+};
