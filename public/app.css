@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
-
 * {
     margin: 0;
     padding: 0;
     user-select: none;
+    box-sizing: border-box;
+    font-family: Inter;
 }
 
 :root {
@@ -11,7 +12,6 @@
     --primary: #f7d30f;
     --secondary: #ff6600;
     --tertiary: #e30a13;
-
     --transition: all 0.2s ease;
 }
 
@@ -58,6 +58,7 @@
 .item:hover {
     transform: scale(1.05);
 }
+
 .item:active {
     transform: scale(1);
 }
@@ -70,9 +71,11 @@
 .first {
     background-color: var(--primary);
 }
+
 .second {
     background-color: var(--secondary);
 }
+
 .third {
     background-color: var(--tertiary);
 }
@@ -83,10 +86,12 @@ a {
     color: var(--linkColor);
     text-decoration: none;
     text-transform: uppercase;
+    transition: var(--transition);
 }
 
 a:hover {
-    filter: invert(1);
+    filter: brightness(1.5);
+    cursor: pointer;
 }
 
 h1 {
@@ -108,7 +113,6 @@ p {
         grid-template-columns: 1fr;
         grid-column-gap: 3rem;
     }
-
     .portfolioHolder .item {
         height: 100px;
     }

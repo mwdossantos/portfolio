@@ -1,12 +1,12 @@
-import s from './modules/Footer.module.css'
+import s from "./modules/Header.module.css";
 
-export function Footer() {
+export function Header() {
     return (
         <div className={s.container}>
             <img src='/logo.png' className={s.logo} alt='logo' />
             <nav className={s.nav}>
                 <a href='#about' className='link'>
-                    About
+                    About us
                 </a>
                 <a href='#portfolios' className='link'>
                     Portfolios
@@ -16,5 +16,5 @@ export function Footer() {
                 </a>
             </nav>
         </div>
-    )
+    );
 }

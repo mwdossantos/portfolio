@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1 {
+    max-width: 400px;
+    color: white;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+    .container h1 {
+        max-width: 200px;
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,7 @@
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-size: cover;
+    background-image: url("https://s3-alpha-sig.figma.com/img/853f/5da9/261bfadb0962a8ec1ccfd74a78feaac0?Expires=1594598400&Signature=c9H-yVqiN1Frd8FztVAIdJSBUWDYwsvBtYjG~MOWlqr~9MHkMR6GikXZxtSl986u-VJyBhNDrl09t9EFDWi2MH44tFGV1wCV5sMSgFrdSB5DA01yEgx0pBElNcL3VIM1MUBuBCJXULvvFnAWFXdKPLfeOy5kerS7MVozh4QZhDL8yZN5qtyvNJ7tAzMBFe-dJC7wu50M3t6vrYodnG09mAhlnbYrig~6wbZs5LlKiiq8K7I4aqi9WdwCKvcSy4X5zSbHshCe~cgvmzPtzVaQZd7We5ot7~tJn4Jtt7sO~aZQn0b1Ag8mqyQxybzyknPB8nOVHjjnnoGqV84zJk3K6w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+}

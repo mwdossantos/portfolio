@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.toolbar {
+    width: 75%;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
+}
+
+@media screen and (max-width: 780px) and (min-width: 320px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container h2 {
+        margin-top: 3rem;
+    }
+    .toolbar {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+}

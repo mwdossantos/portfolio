@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.left {
+    display: flex;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 1.5rem;
+}
+
+.left p {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 320px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left {
+        margin-bottom: 1.5rem;
+    }
+}

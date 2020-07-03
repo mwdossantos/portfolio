@@ -1,6 +1,6 @@
-import s from './modules/Header.module.css'
+import s from "./modules/Footer.module.css";
 
-export function Header() {
+export function Footer() {
     return (
         <div className={s.container}>
             <img src='/logo.png' className={s.logo} alt='logo' />
@@ -16,5 +16,5 @@ export function Header() {
                 </a>
             </nav>
         </div>
-    )
+    );
 }
