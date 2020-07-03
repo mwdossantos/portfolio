@@ -107,6 +107,34 @@ p {
     line-height: 2rem;
 }
 
+.richTextHolderLight {
+    margin-top: 3rem;
+}
+
+.richTextHolderLight img {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+
+.richTextHolderLight p {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderLight h1,
+h2,
+h3,
+h4,
+h5 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderLight a {
+    text-transform: inherit;
+}
+
 @media screen and (max-width: 900px) and (min-width: 320px) {
     .portfolioHolder {
         display: grid;
@@ -116,4 +144,45 @@ p {
     .portfolioHolder .item {
         height: 100px;
     }
+}
+
+.richTextHolderDark {
+    margin: 3rem auto;
+    max-width: 1024px;
+}
+
+.richTextHolderDark img {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.richTextHolderDark p {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark h1 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark h2 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+.richTextHolderDark h3 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+.richTextHolderDark h4 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+.richTextHolderDark h5 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark a {
+    text-transform: inherit;
 }

@@ -1,8 +1,14 @@
 .holder {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.25fr 1fr;
     grid-column-gap: 1.5rem;
     margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1350px) and (min-width: 800px) {
+    .holder {
+        grid-template-columns: 0.5fr 1fr;
+    }
 }
 
 @media screen and (max-width: 800px) and (min-width: 320px) {

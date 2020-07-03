@@ -8,7 +8,7 @@ export function Header() {
             <div className={s.left}>
                 <Link href='/'>
                     <a>
-                        <img src='/logo.png' className={s.logo} alt='logo' />
+                        <img src='/logo.svg' className={s.logo} alt='logo' />
                     </a>
                 </Link>
                 <p style={{ color: "white" }}>
@@ -17,7 +17,7 @@ export function Header() {
             </div>
 
             <nav className={s.nav}>
-                <a href='mailto:bobaekers@hotmail.com' className='link'>
+                <a style={{ color: "white" }} href='mailto:bobaekers@hotmail.com' className='link'>
                     Contact: bobaekers@hotmail.com
                 </a>
             </nav>

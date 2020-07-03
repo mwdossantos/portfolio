@@ -3,7 +3,9 @@ import { Header } from "../../../components/matthew/Header";
 import { HomeNav } from "../../../components/general/HomeNav";
 import { PortfolioItem } from "../../../components/matthew/PortfolioItem";
 
-export default function Home() {
+import { getMattSprint1, getMattSprint2, getMattSprint3 } from "../../../services/sanity";
+
+export default function Home({ mattSprint1, mattSprint2, mattSprint3 }) {
     return (
         <>
             <Head>
@@ -13,9 +15,9 @@ export default function Home() {
             <div className='container' style={{ paddingTop: "3rem" }}>
                 <HomeNav link='/' label='< Go home' />
                 <Header />
-                <PortfolioItem />
-                <PortfolioItem />
-                <PortfolioItem />
+                <PortfolioItem data={mattSprint1} link='/portfolios/matthew/sprint1' />
+                <PortfolioItem data={mattSprint2} link='/portfolios/matthew/sprint2' />
+                <PortfolioItem data={mattSprint3} link='/portfolios/matthew/sprint3' />
                 <div
                     style={{
                         marginTop: "6rem",
@@ -33,4 +35,14 @@ export default function Home() {
             `}</style>
         </>
     );
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            mattSprint1: await getMattSprint1(),
+            mattSprint2: await getMattSprint2(),
+            mattSprint3: await getMattSprint3(),
+        },
+    };
 }

@@ -3,7 +3,7 @@ import s from "./modules/Footer.module.css";
 export function Footer() {
     return (
         <div className={s.container}>
-            <img src='/logo.png' className={s.logo} alt='logo' />
+            <img src='/logo.svg' className={s.logo} alt='logo' />
             <nav className={s.nav}>
                 <a href='#about' className='link'>
                     About

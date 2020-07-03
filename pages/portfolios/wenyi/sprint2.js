@@ -2,13 +2,13 @@ import Head from "next/head";
 
 import { Header } from "../../../components/wenyi/Header";
 import { HomeNav } from "../../../components/general/HomeNav";
-import { getWenyiSprint1, renderRichText } from "../../../services/sanity";
+import { getWenyiSprint2, renderRichText } from "../../../services/sanity";
 
-export default function Sprint1({ wenyiSprint1 }) {
+export default function Sprint1({ wenyiSprint2 }) {
     return (
         <>
             <Head>
-                <title>WOW - Wenyi - Sprint 1</title>
+                <title>WOW - Wenyi - Sprint 2</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <div className='container'>
@@ -17,8 +17,8 @@ export default function Sprint1({ wenyiSprint1 }) {
                     <HomeNav link='/' label='< Go home' />
                 </div>
                 <div style={{ maxWidth: 1024, margin: "0 auto", padding: "0 1.5rem" }}>
-                    <h2>{wenyiSprint1.name}</h2>
-                    <div className='richTextHolderDark'>{renderRichText(wenyiSprint1.content)}</div>
+                    <h2>{wenyiSprint2.name}</h2>
+                    <div className='richTextHolderDark'>{renderRichText(wenyiSprint2.content)}</div>
                 </div>
 
                 <div style={{ backgroundColor: "white", padding: "3rem" }}>
@@ -109,7 +109,7 @@ export default function Sprint1({ wenyiSprint1 }) {
 export async function getStaticProps() {
     return {
         props: {
-            wenyiSprint1: await getWenyiSprint1(),
+            wenyiSprint2: await getWenyiSprint2(),
         },
     };
 }

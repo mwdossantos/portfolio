@@ -10,7 +10,11 @@ export default {
             type: "string",
             fieldset: "sprintInfo",
         },
-
+        {
+            name: "image",
+            title: "Featured image",
+            type: "image",
+        },
         {
             name: "content",
             title: "Content",

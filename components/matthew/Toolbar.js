@@ -1,9 +1,11 @@
 import s from "./modules/Toolbar.module.css";
 
-export function Toolbar() {
+export function Toolbar(props = { data }) {
+    if (!props.data) return null;
+
     return (
         <div className={s.container}>
-            <h2 style={{ color: "white" }}>Trike Creek</h2>
+            <h2 style={{ color: "white" }}>{props.data.name}</h2>
             <div className={s.toolbar}>
                 <div className={s.toolbarItem}>
                     <p
@@ -19,7 +21,7 @@ export function Toolbar() {
                             color: "white",
                         }}
                     >
-                        1
+                        {props.data.sprint}
                     </p>
                 </div>
                 <div className={s.toolbarItem}>
@@ -29,31 +31,14 @@ export function Toolbar() {
                             opacity: 0.5,
                         }}
                     >
-                        Sprint
+                        Duration
                     </p>
                     <p
                         style={{
                             color: "white",
                         }}
                     >
-                        1
-                    </p>
-                </div>
-                <div className={s.toolbarItem}>
-                    <p
-                        style={{
-                            color: "white",
-                            opacity: 0.5,
-                        }}
-                    >
-                        Sprint
-                    </p>
-                    <p
-                        style={{
-                            color: "white",
-                        }}
-                    >
-                        1
+                        {props.data.duration}
                     </p>
                 </div>
                 <div className={s.toolbarItem}>
@@ -63,14 +48,31 @@ export function Toolbar() {
                             opacity: 0.5,
                         }}
                     >
-                        Sprint
+                        Deliverable
                     </p>
                     <p
                         style={{
                             color: "white",
                         }}
                     >
-                        1
+                        {props.data.deliverable}
+                    </p>
+                </div>
+                <div className={s.toolbarItem}>
+                    <p
+                        style={{
+                            color: "white",
+                            opacity: 0.5,
+                        }}
+                    >
+                        Grade
+                    </p>
+                    <p
+                        style={{
+                            color: "white",
+                        }}
+                    >
+                        {props.data.grade}
                     </p>
                 </div>
             </div>

@@ -35,5 +35,6 @@
     .container img {
         width: 100%;
         height: 400px;
+        margin-right: 0;
     }
 }

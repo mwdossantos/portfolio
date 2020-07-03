@@ -16,6 +16,12 @@ export default {
             fieldset: "sprintInfo",
         },
         {
+            name: "summary",
+            title: "Summary",
+            type: "text",
+            fieldset: "sprintInfo",
+        },
+        {
             name: "sprint",
             title: "Sprint",
             type: "string",
@@ -30,6 +36,12 @@ export default {
         {
             name: "deliverable",
             title: "Deliverable",
+            type: "string",
+            fieldset: "sprintInfo",
+        },
+        {
+            name: "grade",
+            title: "Grade",
             type: "string",
             fieldset: "sprintInfo",
         },

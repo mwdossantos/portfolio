@@ -3,8 +3,10 @@ import { Header } from "../../../components/matthew/Header";
 import { HomeNav } from "../../../components/general/HomeNav";
 import { Toolbar } from "../../../components/matthew/Toolbar";
 import { NextSprint } from "../../../components/matthew/NextSprint";
+import { getMattSprint3 } from "../../../services/sanity";
 
-export default function Sprint3() {
+import { renderRichText } from "../../../services/sanity";
+export default function Sprint3({ mattSprint3 }) {
     return (
         <>
             <Head>
@@ -15,10 +17,8 @@ export default function Sprint3() {
                 <HomeNav link='/' label='< Go home' />
                 <Header />
                 <HomeNav link='/portfolios/matthew/home' label='< Go back' />
-                <Toolbar />
-                {/* Rich Text */}
-
-                <NextSprint />
+                <Toolbar data={mattSprint3} />
+                <div className='richTextHolderLight'>{renderRichText(mattSprint3.content)}</div>
             </div>
             <style global jsx>{`
                 body {
@@ -27,4 +27,12 @@ export default function Sprint3() {
             `}</style>
         </>
     );
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            mattSprint3: await getMattSprint3(),
+        },
+    };
 }
