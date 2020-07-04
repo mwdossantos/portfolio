@@ -16,7 +16,7 @@ export default function Home() {
                     <h1 style={{ textAlign: "center" }}>About</h1>
                     <p>
                         Hey! Welcome to our website. This is not just a regular website, but one
-                        that holds three portfolios of three Communication & Multimeda Design
+                        that holds three portfolios of three Communication & Multimedia Design
                         students... Us! <br />
                         <br /> So, who's “us”? Well, we are Bo, Matthew & Wenyi and as we already
                         mentioned we are three students from The Hague University of Applied
