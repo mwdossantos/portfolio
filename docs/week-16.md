@@ -8,7 +8,7 @@ Reflection on the team activities
 
 # Reflection on the team activities
 
-![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/trello-board.jpg)
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/trello-board.JPG)
 
 # Planning
 
