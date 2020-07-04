@@ -1,4 +1,4 @@
-// Week 16 image
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/week-16.png)
 
 Introduction text content
 
