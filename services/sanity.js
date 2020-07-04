@@ -1,6 +1,8 @@
 const sanityClient = require("@sanity/client");
 import imageUrlBuilder from "@sanity/image-url";
 const BlockContent = require("@sanity/block-content-to-react");
+import getYouTubeId from "get-youtube-id";
+import YouTube from "react-youtube";
 
 const client = sanityClient({
     projectId: "guko1cn2",
@@ -26,6 +28,11 @@ export function renderRichText(richText) {
             ),
             image: (props) => {
                 return <img src={imageUrlFor(props.node).url()} />;
+            },
+            youtube: ({ node }) => {
+                const { url } = node;
+                const id = getYouTubeId(url);
+                return <YouTube videoId={id} />;
             },
         },
     };

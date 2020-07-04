@@ -12,6 +12,8 @@ import mattSprint1 from "./mattSprint1";
 import mattSprint2 from "./mattSprint2";
 import mattSprint3 from "./mattSprint3";
 
+import youtube from "./youtube";
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
     // We name our schema
@@ -28,5 +30,6 @@ export default createSchema({
         mattSprint1,
         mattSprint2,
         mattSprint3,
+        youtube,
     ]),
 });

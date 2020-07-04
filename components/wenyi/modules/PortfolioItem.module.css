@@ -31,7 +31,7 @@
     filter: brightness(1.1);
 }
 
-@media screen and (max-width: 1400px) and (min-width: 320px) {
+@media screen and (max-width: 1000px) and (min-width: 320px) {
     .container img {
         object-position: left;
     }

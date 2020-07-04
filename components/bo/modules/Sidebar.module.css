@@ -8,6 +8,11 @@
 .holder img {
     width: 100%;
     object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.holder h2 {
+    color: black;
 }
 
 @media screen and (max-width: 800px) and (min-width: 320px) {

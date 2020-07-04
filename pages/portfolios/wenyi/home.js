@@ -98,7 +98,7 @@ export default function Home({ wenyiSprint1, wenyiSprint2, wenyiSprint3 }) {
                     grid-template-columns: 1fr 1fr 1fr;
                 }
 
-                @media screen and (max-width: 1400px) and (min-width: 320px) {
+                @media screen and (max-width: 1000px) and (min-width: 320px) {
                     .holder {
                         grid-template-columns: 1fr;
                     }

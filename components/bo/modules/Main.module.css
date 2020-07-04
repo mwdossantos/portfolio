@@ -1,13 +1,14 @@
 .holder {
     display: grid;
-    grid-template-columns: 0.25fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
     grid-column-gap: 1.5rem;
     margin-bottom: 3rem;
+    align-items: flex-start;
 }
 
 @media screen and (max-width: 1350px) and (min-width: 800px) {
     .holder {
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 0.4fr 1fr;
     }
 }
 
