@@ -346,7 +346,7 @@ This week has been very heavy, time wise. It took me much longer than expected t
 
 Eventually I made it work and I am happy with the end result. I was also pleased to see that Bo and Wenyi enjoyed entering their information into the studio. No hiccups at all.
 
-I am also happy to see that the team is still communicating and progressing as planned. We haven't walked into any big issues and the team's spirit is still high.
+I am also happy to see that the team is still communicating and progressing as planned. We haven't walked into any big issues and the team's spirit is still high. [Next week](https://github.com/mwdossantos/portfolio/blob/master/docs/week-18.md) I am going to work on the front end pages of the website, and make it personal.
 
 # Resources
 
