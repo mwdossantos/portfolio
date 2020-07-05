@@ -85,7 +85,7 @@ Here's a look of the structure of the repository and the technology stack I will
 
 Now that the repository is up and running, I can start opening it in Visual Studio Code. In order to get a good boilerplate (starting point for a project) up and running I will need to define a clear folder structure:
 
-![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/folder-structure.png)
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/folder-structure.jpg)
 
 You will see a couple of interesting folders here:
 
