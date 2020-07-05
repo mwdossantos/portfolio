@@ -43,11 +43,14 @@ export default function Home({ wenyiSprint1, wenyiSprint2, wenyiSprint3 }) {
                     </div>
                 </div>
                 <div style={{ backgroundColor: "white", padding: "3rem" }}>
-                    <h2>Get in touch with me</h2>
+                    <h2 style={{ color: "black", maxWidth: 1024, margin: "0 auto" }}>
+                        Get in touch with me
+                    </h2>
                     <div
                         style={{
                             display: "flex",
-                            marginTop: "1.5rem",
+                            maxWidth: 1024,
+                            margin: "1.5rem auto 0 auto",
                         }}
                     >
                         <p>
