@@ -450,12 +450,23 @@ As you can imagine, this is done exactly the same for the rest of the pages. It'
 
 ## Setup Vercel
 
+Vercel's a dream. It makes deploying website's super easy and fast. That's why I chose to use it here.
+
+I logged in, created the project and linked the repository. I was then greeted with this screen:
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/vercel1.jpg)
+
+It couldn't be easier. Currently it's deployed on https://portfolio-steel-five.vercel.app/. This is fine for now, but next week I will be linking a _custom_ domain name.
+
 # Next week
 
-Reflection on this week’s activities
+Like I said in the beginning of this week's documentation the rest of the team couldn't do that much work because I had to do a lot of programming again. This is partly because they have different goals and deliverables and makes it hard to find other tasks. I did ask the team to collect feedback that we can work on next week.
+
+Next to the feedback, the [upcoming week](https://github.com/mwdossantos/portfolio/blob/master/docs/week-20.md) is going to be focused on adding a custom YouTube schema type to the rich text field, linking the custom domain and more. See you there!
 
 # Resources
 
 https://nextjs.org/docs/basic-features/data-fetching
 https://www.sanity.io/docs/js-client
 https://www.sanity.io/docs/schema-types
+https://vercel.com/
