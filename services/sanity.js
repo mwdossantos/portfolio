@@ -1,8 +1,4 @@
 const sanityClient = require("@sanity/client");
-import imageUrlBuilder from "@sanity/image-url";
-const BlockContent = require("@sanity/block-content-to-react");
-import getYouTubeId from "get-youtube-id";
-import YouTube from "react-youtube";
 
 const client = sanityClient({
     projectId: "guko1cn2",
@@ -12,11 +8,17 @@ const client = sanityClient({
     useCdn: false, // `false` if you want to ensure fresh data
 });
 
+import imageUrlBuilder from "@sanity/image-url";
 const imageBuilder = imageUrlBuilder(client);
 
 export function imageUrlFor(source) {
     return imageBuilder.image(source);
 }
+
+const BlockContent = require("@sanity/block-content-to-react");
+
+import getYouTubeId from "get-youtube-id";
+import YouTube from "react-youtube";
 
 export function renderRichText(richText) {
     const serializers = {

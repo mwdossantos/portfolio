@@ -18,6 +18,10 @@ As with any project, creating and sticking to a planning is essential when you a
 
 ## Custom domain linking
 
+https://wowportfolios.nl/
+
+## Re-deploy on studio publish
+
 # Next week
 
 Reflection on this week’s activities

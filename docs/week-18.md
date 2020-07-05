@@ -6,7 +6,7 @@ Thank you for taking the time to read this week's update. As you can see in the 
 | :------------------------------ | :-------: |
 | Individual lo-fi & hi-fi design |    ✅     |
 | Frontend pages                  |    ✅     |
-| Custom CSS per member           |    ✅     |
+| Custom CSS per team member      |    ✅     |
 
 But first, let's look what the team has been up to this week.
 
@@ -92,7 +92,7 @@ For the front end, the `components` and `pages` folders are important. Here's th
         -   `/wenyi` - path for any pages that are for Wenyi's portfolio
         -   `/matthew` - path for any pages that are for Matthew's portfolio
 
-This is an extremely beneficial setup. Reason being is that for the homepage (`index.js`) I can use components from the `home` folder. For a sub page of for example myself I can use components from the `components/matthew` folder. Everything is scoped to correctly meaning there won't be any conflicts.
+This is an extremely beneficial setup. Reason being is that for the homepage (`index.js`) I can use components from the `home` folder. For a sub page of for example myself I can use components from the `components/matthew` folder. Everything is scoped correctly meaning there won't be any conflicts.
 
 ### [Homepage](https://wowportfolios.nl/)
 
@@ -170,21 +170,21 @@ export function ImageGrid() {
 }
 ```
 
-As you can see, it gives me a lot of control over the components for each team member, and the styling within each of the components. More about the styling aspect in the next section.
+As you can see, it gives me a lot of control over the components for each team member, and the styling within each of the components. I will elaborate more about the styling aspect in the next section.
 
 ### [Wenyi's page](https://wowportfolios.nl/portfolios/wenyi/home)
 
-Next up is Wenyi's page. It's a bit more complicated as it has three different sprint that it links to. But here, the same principle is still active. Scoped components!
+Next up is Wenyi's page. It's a bit more complicated as it has three different sprints that it links to. But here, the same principle is still active. Scoped components!
 
 ![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/wenyi-page.png)
 
-The [subpage](https://wowportfolios.nl/portfolios/wenyi/sprint3) for wenyi looks like this, it's content is going to be pulled from Sanity next week.
+The [subpage](https://wowportfolios.nl/portfolios/wenyi/sprint3) for Wenyi looks like this, it's content is going to be pulled from Sanity next week.
 
 ![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/wenyi-subpage.png)
 
 ### [Matthew's page](https://wowportfolios.nl/portfolios/matthew/home)
 
-Finally, here's my page.
+Finally, here's my page. You can clearly see the difference in style with the black background. I really like it a lot.
 
 ![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/matthew-page.png)
 
@@ -194,18 +194,157 @@ The subpage uses almost the same layout idea of Wenyi, with a rich text field in
 
 ---
 
-Instead of dissecting the code for all the components here, I suggest going to the repository itself and taking a look at how they are linked together using GitHub's new hovering tool.
+Luckily I only needed to create the detail pages once, as I will re-use their code for the other sprints next week. This saves me some time.
+
+However, instead of dissecting the code for all the components here, I suggest going to the [repository](https://github.com/mwdossantos/portfolio/tree/master/components) itself and taking a look at how they are linked together using GitHub's new hovering tool.
 
 The components are not my learning goal as I can make them already and it doesn't make sense to spend too much time and resources on documenting them here.
 
-## Custom CSS per member
+Another disclaimer: The designs for all the pages are interpreted by me literally from Figma.
 
-That's because I am using **CSS Modules** which scope the CSS to the component it's being used in, and it can't overlap into other files.
+## Custom CSS per team member
+
+The interesting part about the different styles is that I had to write custom CSS for each member. The problem is that you can end up with overlapping and duplicate classnames (which I experienced in the past). This can create code conflicts and cause weird artifacts in your website.
+
+That's exactly the reason why I am using **CSS Modules**, which scope the CSS to the component it's being used in, and it can't overlap into other files. This will ensure that your code and website will stay conflict free and give you the control you want within a component.
+
+### Custom rich texts
+
+Because Wenyi will have a dark text rich text field and I will have a light text rich text field, I will need to make sure the code can handle that. The easiest solution would be to create two classnames:
+
+-   `.richTextHolderLight`
+-   `.richTextHolderDark`
+
+Then, based on which one I need, I would give that class to the `<div>` tag that will hold the rich text field on the website.
+
+The rich text field I get from the studio (I have used it before, more details in next week's documentation) will return an array of markup tags, such as `<p>` and `<h1>`. That's why the CSS will look like this:
+
+```css
+/* Light version */
+
+.richTextHolderLight {
+    margin-top: 3rem;
+}
+
+.richTextHolderLight img {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+
+.richTextHolderLight p {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderLight blockquote {
+    color: rgba(255, 255, 255, 0.75);
+    font-style: italic;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 110, 255, 0.2);
+}
+
+.richTextHolderLight ul {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderLight ul li {
+    margin-left: 1.5rem;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.richTextHolderLight h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.richTextHolderLight h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.richTextHolderLight h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.richTextHolderLight h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.richTextHolderLight h5 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderLight a {
+    text-transform: inherit;
+}
+
+/* Dark version */
+.richTextHolderDark {
+    margin: 3rem auto;
+    max-width: 1024px;
+}
+
+.richTextHolderDark iframe {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 5rem;
+}
+
+.richTextHolderDark img {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.richTextHolderDark p {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark h1 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark h2 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark h3 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark h4 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark h5 {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.richTextHolderDark a {
+    text-transform: inherit;
+}
+```
 
 # Next week
 
-Reflection on this week’s activities
+Looking back at this week, it's clear that if we don't communicate correctly as a team it's going to be very tiresome and difficult to stay motivated. Friday we had a great call to talk ik through and I really wanted to let Bo know that it's okay to be distracted or busy, but that I would appreciate it if she would let me know.
+
+Other than that this week has been massive in progression. The complete front end was done. [Next week](https://github.com/mwdossantos/portfolio/blob/master/docs/week-19.md) I am going to connect the front end with the back end using a middleman.
+
+It's going to be exciting.
 
 # Resources
 
 https://www.figma.com/
+https://nextjs.org/docs/api-reference/next/link
+https://nextjs.org/docs/api-reference/next/head
+https://nextjs.org/docs/basic-features/built-in-css-support
