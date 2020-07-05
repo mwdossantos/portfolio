@@ -14,7 +14,7 @@ export default function Home({ wenyiSprint1, wenyiSprint2, wenyiSprint3 }) {
             </Head>
             <div className='container'>
                 <Header />
-                <div style={{ paddingLeft: "1.5rem" }}>
+                <div style={{ maxWidth: 1024, margin: "0 auto", paddingLeft: "1.5rem" }}>
                     <HomeNav link='/' label='< Go home' />
                 </div>
 
