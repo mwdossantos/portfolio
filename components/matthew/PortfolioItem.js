@@ -15,7 +15,7 @@ export function PortfolioItem(
         <div className={s.container}>
             <img src={imageUrlFor(props.data.image)} />
             <div className={s.content}>
-                <h2 style={{ color: "white" }}>{props.data.name}</h2>
+                <h1 style={{ color: "white", fontSize: 36 }}>{props.data.name}</h1>
                 <p
                     style={{
                         color: "white",

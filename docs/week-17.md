@@ -6,11 +6,9 @@ Introduction text content
 
 Reflection on the team activities
 
-# Reflection on the team activities
-
-Reflection on the planning status
-
 # Planning
+
+As with any project, creating and sticking to a planning is essential when you are working with a deadline. In this section I am going to reflect on the progression made by myself and the team.
 
 # My activities
 

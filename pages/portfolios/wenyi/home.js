@@ -24,7 +24,7 @@ export default function Home({ wenyiSprint1, wenyiSprint2, wenyiSprint3 }) {
                         src='https://s3-alpha-sig.figma.com/img/1485/4c85/dbec41d8d65aee88f77ca285f4aab23d?Expires=1594598400&Signature=JUb~xhHlX~K6gG8nOd12WAxdk5Y6Az78BDdUXkYu8a51RryIBbrUPkg2oHP1lA2sXgRXP7qZyYE0BsGImlCqRlPC2iDIyrbF4kdr63-LRWrQxI8Nm4ojpyJX2EGT7x7sqHyEIuLj9FWH6lN~jkRgcianB-lM8NSY~DqkSXlvTaqY4UVqR90HZOeZRaPyHy3NKBxkeej5-LP3pT6GmESRt7AILNBl0QChrFEeqUn1U6t~VFyKojuslsxcxGLLurwaWBRG~PPunhOXW5eJWcGafC~ih7LKmILi91hP1bHnRHE0rnYao236iyV-JOdwZGaaqk7w3LRS3CZr7cs4rKUMDQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
                     />
                     <div>
-                        <h2>Wenyi’s portfolio</h2>
+                        <h2 style={{ color: "black" }}>Wenyi’s portfolio</h2>
                         <p>
                             In the past 15 weeks I have worked on three projects. The first project
                             was to brand a new event by creating a logo, banner and flyer.The second
