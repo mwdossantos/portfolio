@@ -1,10 +1,16 @@
 .container {
-    color: white;
+    transition: var(--transition);
+    padding: 1.5rem;
+    color: black;
     margin: 1.5rem;
 }
 
 .container h1 {
     font-size: 36px;
+}
+
+.container:hover {
+    background-color: var(--tertiary);
 }
 
 .container img {

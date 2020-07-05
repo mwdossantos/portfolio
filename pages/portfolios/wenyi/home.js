@@ -34,7 +34,7 @@ export default function Home({ wenyiSprint1, wenyiSprint2, wenyiSprint3 }) {
                     </div>
                 </div>
 
-                <div style={{ backgroundColor: "red", padding: "3rem" }}>
+                <div style={{ backgroundColor: "white", padding: "3rem" }}>
                     <h2 style={{ color: "white" }}>Portfolio</h2>
                     <div className='holder'>
                         <PortfolioItem data={wenyiSprint1} link='/portfolios/wenyi/sprint1' />
