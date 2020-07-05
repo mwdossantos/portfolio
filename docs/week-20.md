@@ -14,6 +14,8 @@ As with any project, creating and sticking to a planning is essential when you a
 
 ## Custom YouTube schema type
 
+## Feedback on the website
+
 ## Custom domain linking
 
 # Next week
