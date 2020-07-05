@@ -51,7 +51,156 @@ For the lo-fi and hi-fi designs I suggest taking a look at our team's [Figma](ht
 
 ## Frontend pages
 
+As you already saw in the previous weeks aswell as the Sanity desk structure explanation, we will have the following structure for the portfolios:
+
+-   `index.js`
+    -   `/bo`
+        -   `home.js`
+    -   `/wenyi`
+        -   `home.js`
+        -   `sprint1.js`
+        -   `sprint2.js`
+        -   `sprint3.js`
+    -   `/matthew`
+        -   `home.js`
+        -   `sprint1.js`
+        -   `sprint2.js`
+        -   `sprint3.js`
+
+As you can see, the navigation is pretty straightforwards. From the home page (`index.js`) you can navigate to `/bo/home` or `/wenyi/home`. You may have noticed that Bo only has one sub page. That is correct, as she shows all her stuff in one gallery of pictures. Wenyi and I have decided to use the sub pages for the sprints to document the individual sprints.
+
+Before I go on it's important to inform you about the structure of the front end. In week 16 I touched upon it and created the sub pages. Here's that structure:
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/folder-structure.jpg)
+
+For the front end, the `components` and `pages` folders are important. Here's the sub page structure for them:
+
+-   `/components` - all the components that I will create will live here
+    -   `/general` - any generic components applicable anywhere on the website
+        -   `/modules` - the CSS modules folder for these components
+    -   `/home` - any components that are limited to the home page
+        -   `/modules` - the CSS modules folder for these components
+    -   `/bo` - any components that are limited to Bo's portfolio
+        -   `/modules` - the CSS modules folder for these components
+    -   `/wenyi` - any components that are limited to Wenyi's portfolio
+        -   `/modules` - the CSS modules folder for these components
+    -   `/matthew` - any components that are limited to Matthew's portfolio
+        -   `/modules` - the CSS modules folder for these components
+-   `/pages` - _already exsists, just for reference_
+    -   `/portfolios` - sub-path for portfolios
+        -   `/bo` - path for any pages that are for Bo's portfolio
+        -   `/wenyi` - path for any pages that are for Wenyi's portfolio
+        -   `/matthew` - path for any pages that are for Matthew's portfolio
+
+This is an extremely beneficial setup. Reason being is that for the homepage (`index.js`) I can use components from the `home` folder. For a sub page of for example myself I can use components from the `components/matthew` folder. Everything is scoped to correctly meaning there won't be any conflicts.
+
+### [Homepage](https://wowportfolios.nl/)
+
+So let's start off with the first page, the homepage:
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/homepage.png)
+
+```js
+import Head from "next/head";
+import Link from "next/link";
+import { Header } from "../components/home/Header";
+import { Footer } from "../components/home/Footer";
+
+export default function Home() {
+    return (
+        <>
+            <Head>
+                <title>WOW - Portfolio</title>
+                <link rel='icon' href='/favicon.ico' />
+            </Head>
+            <div className='container'>
+                <Header />
+                // rest of the code
+                <Footer />
+            </div>
+        </>
+    );
+}
+```
+
+As you can see the homepage uses the `<Header/>` and `<Footer/>` components from the `home` folder. They are not used anywhere else in the website. I am not going to dive deeper in the rest of the code here, as it's very repetitive and is just basic HTML & CSS.
+
+### [Bo's page](https://wowportfolios.nl/portfolios/bo/home)
+
+Now onto the first page with completely unique styling from the rest, scoped within its components.
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/bo-page.jpg)
+
+Bo's page has a "unique" style to say the least and well, it mainly consists of two components. The `<SideBar/>` and `<ImageGrid/>`. These two live on the page itself in the `<Main/>` component:
+
+```js
+// components/bo/Main.js
+
+export function Main() {
+    return (
+        <div className={s.holder}>
+            <Sidebar />
+            <ImageGrid />
+        </div>
+    );
+}
+
+// components/bo/Sidebar.js
+
+export function Sidebar() {
+    return (
+        <div className={s.holder}>
+            <img src='https://s3-alpha-sig.figma.com/img/6461/e048/f825aa251c12db6849a300d94183656e?Expires=1594598400&Signature=hVNK4tJw3Qe9Pj11s6jQGTiufXSJNZ-mfUZige1DM8-LgBJBdaG759Du00yxEeB0g6-njbGpjdKRKFajfWEvfNd3DOWAO9WbXIfci6dYVrpjIvmIViE7BZMPWwZtscJFTXRpDHhbKL1ohO4xYKgZrlFJxQ2vAPWI7PKvh~JtGlZAQELlSKtqdRUbcaFtyh7i3JTc62vg2DZydG0Dh~rKdeS4rEcbYzF7pd8591pJ4kUfTp6bTr~hQr~E~2OTVXE81vBQCglz4Fs5mQasc74pLnQk9OjMS2p4Bx1mi17oY8qltcS5eCxuX8uNEtLJeJlM09BQsFSjA5svuMqU-5A3pQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' />
+
+            <h2>Bo Baekers</h2>
+            <p>The past 20 weeks have really been a creative journey to me.</p>
+        </div>
+    );
+}
+
+// components/bo/ImageGrid.js
+export function ImageGrid() {
+    return (
+        <div className={s.holder}>
+            <div className={s.grid}>
+                <img src='https://cdn.sanity.io/images/guko1cn2/production/ddf72fe1cd9bdd3b51f8905959bac7914c316864-3024x4032.jpg' />
+            </div>
+        </div>
+    );
+}
+```
+
+As you can see, it gives me a lot of control over the components for each team member, and the styling within each of the components. More about the styling aspect in the next section.
+
+### [Wenyi's page](https://wowportfolios.nl/portfolios/wenyi/home)
+
+Next up is Wenyi's page. It's a bit more complicated as it has three different sprint that it links to. But here, the same principle is still active. Scoped components!
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/wenyi-page.png)
+
+The [subpage](https://wowportfolios.nl/portfolios/wenyi/sprint3) for wenyi looks like this, it's content is going to be pulled from Sanity next week.
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/wenyi-subpage.png)
+
+### [Matthew's page](https://wowportfolios.nl/portfolios/matthew/home)
+
+Finally, here's my page.
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/matthew-page.png)
+
+The subpage uses almost the same layout idea of Wenyi, with a rich text field in the middle that will pull all the data from Sanity, also next week.
+
+![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/matthew-subpage.png)
+
+---
+
+Instead of dissecting the code for all the components here, I suggest going to the repository itself and taking a look at how they are linked together using GitHub's new hovering tool.
+
+The components are not my learning goal as I can make them already and it doesn't make sense to spend too much time and resources on documenting them here.
+
 ## Custom CSS per member
+
+That's because I am using **CSS Modules** which scope the CSS to the component it's being used in, and it can't overlap into other files.
 
 # Next week
 
