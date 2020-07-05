@@ -45,7 +45,7 @@ As with any project, creating and sticking to a planning is essential when you a
 
 As you saw in the Trello board in the last section, everybody had some tasks planned already, and during the first week it was all still a bit new. During the weekend of the first week a lot more tasks were added, which are not on the screenshot. All in all, everybody managed to finish their tasks. My tasks for this week will be described in greater detail later on in this week's documentation.
 
-Of course, just like in the past few weeks, there are personal goals to achieve as well. To help understand those goals I have split them up in two parts: the learning goal and the deliverable.
+Of course, just like in the past few weeks, there are personal goals to achieve as well. To help understand those goals I have split them up in two parts: the personal learning goal and the personal deliverable.
 
 ### Personal learning goal
 
