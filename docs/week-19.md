@@ -6,7 +6,6 @@ Thank you for taking the time to read this week's update. As you can see in the 
 | :------------------------------------- | :-------: |
 | Setup Sanity integration with frontend |    ✅     |
 | Setup Vercel                           |    ✅     |
-| Custom CSS per team member             |    ✅     |
 
 But first, let's look what the team has been up to this week.
 
@@ -22,13 +21,13 @@ Other than that this week hasn't been too crazy. Let's dive deeper into the plan
 
 As with any project, creating and sticking to a planning is essential when you are working with a deadline. In this section I am going to reflect on the progression made by myself and the team.
 
-For this week, it was important that I finished my activities listed further on in this week's documentation. This is because without it, the website wouldn't function correctly and wouldn't be able to fetch the data that Bo and Wenyi filled in, in the studio.
+For this week, it was important that I finished my activities listed further on in this week's documentation. This is because without it, the website wouldn't function correctly and wouldn't be able to fetch the data that Bo and Wenyi entered in the studio.
 
 I am happy to report that everything did go well, and I managed to finish my activities. Keep reading to see how!
 
 # My activities
 
-Now up next are the two very important activities I did this week. One will make sure that the website is hydrated with data, while the other one means it will become ready to show to the world!
+Now, up next are the two very important activities I did this week. One will make sure that the website is hydrated with data, while the other one means it will become ready to show to the world!
 
 ## Setup Sanity integration with frontend
 
@@ -363,7 +362,7 @@ export async function getMattSprint3() {
 
 ### Hydrate the front end
 
-Now using that middleman file, that contains all of my queries and helper functions, I can start loading in the data into the Next.js front end. Luckily Next.js has data fetching functions ready to be used for this exact use case. Called `getStaticProps()`, it allows me to fetch data at build time using the feting functions from the middleman file.
+Now using that middleman file, that contains all of my queries and helper functions, I can start loading in the data into the Next.js front end. Luckily Next.js has data fetching functions ready to be used for this exact use case. Called `getStaticProps()`, it allows me to fetch data at build time using the fetching functions from the middleman file.
 
 Let's take a look at the file `mattSprint1.js`, and see what this looks like:
 
@@ -466,7 +465,9 @@ Next to the feedback, the [upcoming week](https://github.com/mwdossantos/portfol
 
 # Resources
 
-https://nextjs.org/docs/basic-features/data-fetching
-https://www.sanity.io/docs/js-client
-https://www.sanity.io/docs/schema-types
-https://vercel.com/
+| Link                                                                            |                            Why?                             |
+| :------------------------------------------------------------------------------ | :---------------------------------------------------------: |
+| [Next.js - Data fetching](https://nextjs.org/docs/basic-features/data-fetching) |           To learn about data fetching in Next.js           |
+| [Sanity - JavaScript client](https://www.sanity.io/docs/js-client)              | To learn how to use the Sanity client in the middleman file |
+| [Sanity - Schemas](https://www.sanity.io/docs/schema-types)                     |     To learn about using and creating schemas in Sanity     |
+| [Vercel](https://vercel.com/)                                                   |                    To deploy the website                    |

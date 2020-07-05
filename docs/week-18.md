@@ -16,7 +16,7 @@ This was the first week where I noticed a decline in communication from Bo. Ther
 
 During one of the classes of this week I had a call with Paul, and discussed the matter with him. I was really struggling with the fact that the longer I would wait the less time I would have for programming the website, and the lower the chance would be to successfully finish this minor.
 
-That's why Paul helped me come up with a solution. I sent the team a message that I am too happy with the fact that communication is being let down, and that we will need to have the hi-fi design finalized by the end of this week. If that wasn't the case, then I would continue without Bo and make sure we get the minor finished.
+That's why Paul helped me come up with a solution. I sent the team a message that I am not too happy with the fact that communication is being let down, and that we will need to have the hi-fi design finalized by the end of this week. If that wasn't the case, then I would continue without Bo and make sure we get the minor finished.
 
 Luckily, after that message, we got a response. I won't go into personal details but this step of communication towards Bo helped her open up about what's not going well. Eventually though, she really pulled through and managed to finish the hi-fi design for the home page today (friday!).
 
@@ -28,7 +28,7 @@ The team was very proud. Here's the tasks we did this week:
 
 As I explained in the previous section, there was a slight hiccup in progression earlier in the week, but Bo stepped up and finalized the hi-fi design wich puts us right back on track.
 
-I also had a call with the team about how they experience the planning and team management. They said that the Trello helps a lot but that they also would like to have more weekly calls. Sadly, due to the busy schedules of everybody it's hard to plan calls outside of the school days themselves.
+I also had a call with the team about how they experience the planning and team management. They said that the Trello helps a lot but that they also would like to have more weekly calls. Sadly, due to the busy schedules of everybody its hard to plan calls outside of the school days themselves.
 
 To solve this, we plan to have a call after every class and discuss the progression of that week.
 
@@ -178,7 +178,7 @@ Next up is Wenyi's page. It's a bit more complicated as it has three different s
 
 ![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/wenyi-page.png)
 
-The [subpage](https://wowportfolios.nl/portfolios/wenyi/sprint3) for Wenyi looks like this, it's content is going to be pulled from Sanity next week.
+The [subpage](https://wowportfolios.nl/portfolios/wenyi/sprint3) for Wenyi looks like this, its content is going to be pulled from Sanity next week.
 
 ![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/wenyi-subpage.png)
 
@@ -344,7 +344,9 @@ It's going to be exciting.
 
 # Resources
 
-https://www.figma.com/
-https://nextjs.org/docs/api-reference/next/link
-https://nextjs.org/docs/api-reference/next/head
-https://nextjs.org/docs/basic-features/built-in-css-support
+| Link                                                                         |                        Why?                         |
+| :--------------------------------------------------------------------------- | :-------------------------------------------------: |
+| [Figma](https://www.figma.com/)                                              |              The design tool of choice              |
+| [Next.js - Link](https://nextjs.org/docs/api-reference/next/link)            |  The link component from next for in-page linking   |
+| [Next.js - Head](https://nextjs.org/docs/api-reference/next/head)            | The head component to manage meta tags on each page |
+| [Next.js - CSS](https://nextjs.org/docs/basic-features/built-in-css-support) |           To learn how to use CSS modules           |

@@ -13,9 +13,9 @@ But first, let's look what the team has been up to this week.
 
 # Teamwork
 
-I am very happy where the team's at now. Especially compared to week 18. The miscommunications are no more and I am seeing that back in the way we exchange feedback about the website and how I can share progress in the WhatsApp group.
+I am very happy where the team's at now. Especially compared to week 18. The miscommunications are no more and I am seeing that in the way we exchange feedback about the website and how I can share progress in the WhatsApp group.
 
-This week I asked Bo and Wenyi to comeup with a domain name for our website. Something that aligns with our logo as well. Say hello to [wowportfolios.nl](https://wowportfolios.nl/).
+This week I asked Bo and Wenyi to come up with a domain name for our website. Something that aligns with our logo as well. Say hello to [wowportfolios.nl](https://wowportfolios.nl/).
 
 I bought the domain through Mijn Domein. I will be going through the setup of the custom domain with Vercel later on in this week's documentation.
 
@@ -235,7 +235,7 @@ Secondly I copied the DNS settings - `A record for the apex domain (without www)
 
 ![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/domain2.jpg)
 
-I then waited patiently for the domain name's to resolve, and voila! About 3 hours later, it was working perfectly fine. For consistency's sake I redirected our test domain to the custom one.
+I then waited patiently for the domain names to resolve, and voila! About 3 hours later, it was working perfectly fine. For consistency's sake I redirected our test domain to the custom one.
 
 ![image](https://raw.githubusercontent.com/mwdossantos/portfolio/master/docs/images/domain3.jpg)
 
@@ -281,6 +281,8 @@ After this week's documentation you will find a range of screenshots from the fi
 
 # Resources
 
-https://www.sanity.io/guides/portable-text-how-to-add-a-custom-youtube-embed-block
-https://www.mijndomein.nl/
-https://vercel.com/
+| Link                                                                                                       |                            Why?                             |
+| :--------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------: |
+| [Sanity - Serializers](https://www.sanity.io/guides/portable-text-how-to-add-a-custom-youtube-embed-block) | To learn how to create my own type for the rich text field  |
+| [Mijn Domein](https://www.mijndomein.nl/)                                                                  | To purchase and manage the DNS settings for the domain name |
+| [Vercel](https://vercel.com/)                                                                              |                    To deploy the website                    |

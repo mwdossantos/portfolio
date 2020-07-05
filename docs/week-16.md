@@ -206,10 +206,12 @@ Speaking about my activities of this week, I am very happy to see that I am taki
 
 # Resources
 
-https://trello.com/mwdossantos/boards
-https://github.com/
-https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
-https://code.visualstudio.com/
-https://nextjs.org/
-https://www.sanity.io/
-https://getbootstrap.com/
+| Link                                                                                                       |                Why?                 |
+| :--------------------------------------------------------------------------------------------------------- | :---------------------------------: |
+| [Trello](https://trello.com/mwdossantos/boards)                                                            |       For project management        |
+| [GitHub](https://github.com/)                                                                              |         For the repository          |
+| [GitHub Markdown](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) |         For this `.md` spec         |
+| [Visual Studio Code](https://code.visualstudio.com/)                                                       |        The code editor I use        |
+| [Next.js](https://nextjs.org/)                                                                             | The front end React framework I use |
+| [Sanity](https://www.sanity.io/)                                                                           |    The back end framework I use     |
+| [Bootstrap](https://getbootstrap.com/)                                                                     |          As an inside joke          |

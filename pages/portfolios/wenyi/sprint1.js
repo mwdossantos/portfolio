@@ -13,10 +13,10 @@ export default function Sprint1({ wenyiSprint1 }) {
             </Head>
             <div className='container'>
                 <Header />
-                <div style={{ paddingLeft: "1.5rem" }}>
+                <div style={{ maxWidth: 768, margin: "0 auto", paddingLeft: "1.5rem" }}>
                     <HomeNav link='/' label='< Go home' />
                 </div>
-                <div style={{ maxWidth: 1024, margin: "0 auto", padding: "0 1.5rem" }}>
+                <div style={{ maxWidth: 768, margin: "0 auto", padding: "0 1.5rem" }}>
                     <h2>{wenyiSprint1.name}</h2>
                     <div className='richTextHolderDark'>{renderRichText(wenyiSprint1.content)}</div>
                 </div>

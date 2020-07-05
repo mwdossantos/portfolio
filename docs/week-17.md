@@ -148,7 +148,7 @@ export default createSchema({
 });
 ```
 
-This file is so important as its the base of my project and defines which _custom schemas_ that I create can be accessed in the studio itself throught my custom desk structure. So firstly, let's take a look at what a _custom schema_ looks like:
+This file is so important as its the base of my project and defines which _custom schemas_ that I create can be accessed in the studio itself through my custom desk structure. So firstly, let's take a look at what a _custom schema_ looks like:
 
 ```javascript
 // boPortfolio.js
@@ -350,6 +350,8 @@ I am also happy to see that the team is still communicating and progressing as p
 
 # Resources
 
-https://trello.com/
-https://www.sanity.io/docs/overview-structure-builder
-https://www.sanity.io/docs/content-modelling
+| Link                                                                                |                       Why?                       |
+| :---------------------------------------------------------------------------------- | :----------------------------------------------: |
+| [Trello](https://trello.com/mwdossantos/boards)                                     |              For project management              |
+| [Sanity - Structure builder](https://www.sanity.io/docs/overview-structure-builder) |    To learn how to use the structure builder     |
+| [Sanity - Schema modeling](https://www.sanity.io/docs/content-modelling)            | To learn how to use and create schemas in Sanity |
