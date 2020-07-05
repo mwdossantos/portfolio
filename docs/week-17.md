@@ -178,7 +178,7 @@ export default {
 };
 ```
 
-As an example, here you can see the schema I made for Bo's portfolio page. It contains a couple of fields that I can customize and add upon. Now, this schema itself doesn't do that much on its own. That's why I need to import it in the global `schema.js` file and them expose it to the custom `deskStructure.js` file. I am also importing the schema's for Wenyi and myself. Let's go:
+As an example, here you can see the schema I made for Bo's portfolio page. It contains a couple of fields that I can customize and add upon. Now, this schema itself doesn't do that much on its own. That's why I need to import it in the global `schema.js` file and then expose it to the custom `deskStructure.js` file. I am also importing the schema's for Wenyi and myself. Let's go:
 
 ```javascript
 // schema.js
@@ -346,7 +346,7 @@ This week has been very heavy, time wise. It took me much longer than expected t
 
 Eventually I made it work and I am happy with the end result. I was also pleased to see that Bo and Wenyi enjoyed entering their information into the studio. No hiccups at all.
 
-I am also happy to see that the team is still communicating and progressing as planned. We haven't walked into any big issues and the team's spirit is still high. [Next week](https://github.com/mwdossantos/portfolio/blob/master/docs/week-18.md) I am going to work on the front end pages of the website, and make it personal.
+I am also happy to see that the team is still communicating and progressing as planned. We haven't walked into any big issues and the team's spirit is still high. [Next week](https://github.com/mwdossantos/portfolio/blob/master/docs/week-18.md) I am going to work on the front end pages of the website, and make it personal. I can't wait!
 
 # Resources
 
